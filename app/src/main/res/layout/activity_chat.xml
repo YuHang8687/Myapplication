@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChatActivity">
+
+    <FrameLayout
+        android:id="@+id/search_edit_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:background="#12B7F5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:text="杜宇航"
+            android:id="@+id/chat_title"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_marginLeft="-15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/left"
+            />
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/call"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="460dp"
+            />
+        <ImageView
+            android:id="@+id/cnotact"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="500dp"
+            />
+    </FrameLayout>
+    <ListView
+        android:id="@+id/list_message"
+        android:layout_below="@id/search_edit_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:entries="@array/array"
+        />
+
+    <com.hyphenate.easeui.widget.EaseChatInputMenu
+        android:id="@+id/input_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

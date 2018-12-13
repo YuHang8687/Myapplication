@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/image1"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:arrowWidth="8dp"
+        app:angle="15dp"
+        app:arrowHeight="14dp"
+        app:arrowPosition="14dp"
+        app:arrowLocation="left"
+        app:arrowCenter="true"
+        app:bubbleColor="#7EC0EE"
+        android:visibility="gone"
+        />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image1"
+        android:layout_marginTop="50dp"
+        app:roundAsCircle="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+
+        />
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_toLeftOf="@+id/image2"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:arrowWidth="8dp"
+        app:angle="15dp"
+        app:arrowHeight="14dp"
+        app:arrowPosition="14dp"
+        app:arrowLocation="right"
+        app:arrowCenter="true"
+        app:bubbleColor="#7EC0EE"
+        android:visibility="gone"
+        />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image2"
+        android:layout_marginTop="115dp"
+        app:roundAsCircle="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
